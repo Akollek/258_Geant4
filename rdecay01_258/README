@@ -1,0 +1,160 @@
+$Id: README 68017 2013-03-13 13:29:53Z gcosmo $
+-------------------------------------------------------------------
+
+Amiel:
+//Howdy y'all. I've put all my comments behind two backslashes even though this
+// isn't code, just for readability and consistency with C++. Feel free to add
+// your own comments, just try to keep it neat. I suspect that the following
+// topics will cause us the most grief:
+//		1) Taking our results from this simulation and interpreting them
+//			in the context of our experiment.
+//		2) PhysicsList.cc, EventAction.cc, and RunAction.cc will probably
+//			need a lot of work (I think most of our work will be here
+//			and DetectorConstruction.cc, however, the latter is pretty
+//			straightforward).
+
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                            rdecay01 
+                            --------
+			    
+ Survey G4RadioactiveDecay process. See Physics Reference Manual, chapter 36.
+ See also http://ie.lbl.gov/decay.html
+ 	
+ 1- Geometry construction
+    ---------------------
+
+ It is a simple box which represente an 'infinite' homogeneous medium.
+
+Amiel:
+//We will need to place a volume within the world volume representing whatever we
+// send the particles through (this aspect should not be challenging) and possibly
+// one representing our detector. I'm not sure yet exactly how we will be
+// interpreting the results of a simulation in terms of the Geiger
+// counter used in the experiment, but it may involve constructing a counter in
+// the simulation (hopefully not).
+  
+ 2- Physics list
+    ------------
+
+ PhysicsList.cc defines only G4RadioactiveDecay, G4Transportation processes,
+ and relevant particle definitions.
+ Therefore, once created, particles or ions travel as geantino.
+
+Amiel:         	
+//This will have to change as I don't think we want our particles travelling as
+// geantino. This will likely be more difficult.
+
+ 3- Primary generator
+    -----------------
+ 
+ Default kinematic is an ion (Ne24), at rest, at coordinate origin.
+ Can be changed with particleGun commands.
+
+Amiel:
+//This will change as well, but can be done quite easily. See
+// PrimaryGeneratorAction.cc.
+         	
+ 4- Physics
+    -------
+ As said above, all particles and ions behave as geantino, eg. no energy loss.
+     
+ A flag, /rdecay01/fullChain (false or true), allows to limit to
+ single decay (default) or full decay chain.
+ 
+ In case of full decay chain, G4TrackStatus of ions is set to fStopButAlive
+ in order to force decay at rest.  
+   
+ At each decay, one counts and plots energy spectrum of created particles and
+ ions, and energy-momentum balance of that decay.
+ 
+ Total time of life of decay chain is plotted. Activity is computed.
+ 
+ Few macros are given in example. Debug.mac is to be run in interactive mode. 
+ 
+ 4-a User data files
+ -------------------
+ Users can redefine RadioactiveDecay and PhotonEvaporation data, via commands:
+ /grdm/setRadioactiveDecayFile
+ /grdm/setPhotoEvaporationFile 
+ Examples of such files are given in subdirectory UserData. 
+ Formats are described in readme
+ Examples in macros Cf238.mac and No252.mac 
+
+Amiel:
+//This will also, of course, need to be edited to fit our needs. More of a physics
+// task than a comp sci task. After a bit of reading up, this shouldn't be too
+// hard. 
+  	
+ 5- Visualisation
+    -------------
+ 
+ Visualization Manager is set in the main().
+ Initialisation of the drawing is done via the commands
+ /vis/.. in the macro vis.mac. This macro is automatically read from the main 
+ in case of interactive running mode.
+ 
+ e- red
+ e+ blue
+ nu_e white
+ anti_nu_e white
+ gamma green
+ alpha yellow
+ GenericIon grey
+ 
+ 6- How to start ?
+    --------------
+ 
+  - Execute rdecay01 in 'batch' mode from macro files
+ 	% rdecay01   singleDecay.mac
+ 		
+  - Execute rdecay01 in 'interactive mode' with visualization
+ 	% rdecay01
+ 	....
+ 	Idle>   ---> type your commands. For instance:
+	Idle> /control/execute debug.mac 
+	....
+	Idle> /run/beamOn 1
+	....				
+ 	Idle> exit
+
+Amiel:
+//We will likely use 'batch' mode, as I think it will be easier.
+	
+ 7- Histograms
+    ----------
+ 
+  rdecay01 produces several 1D histograms which are saved as
+  rdecay01.root by default.
+
+      1 : energy spectrum: e+ e-
+      2 : energy spectrum: nu_e anti_nu_ev
+      3 : energy spectrum: gamma
+      4 : energy spectrum: alpha
+      5 : energy spectrum: ions
+      6 : total kinetic energy (Q)
+      7 : momentum balance
+      8 : total time of life of decay chain          
+                            
+   The histograms are managed by G4AnalysisManager and its Messenger. 
+   The histos can be individually activated with the command :
+   /analysis/h1/set id nbBins  valMin valMax unit 
+   where unit is the desired unit for the histo (MeV or keV, deg or mrad, etc..)
+   
+   One can control the name of the histograms file with the command:
+   /analysis/setFileName  name  (default rdecay1)
+   
+   It is possible to choose the format of the histogram file : root (default),
+   xml, csv, by using namespace in HistoManager.hh
+
+Amiel:
+//Let's change it to csv because that works with MATLAB and Mathematica, and I'd
+// rather not learn ROOT this semester on top of all this Geant4 stuff...
+   
+   It is also possible to print selected histograms on an ascii file:
+   /analysis/h1/setAscii id
+   All selected histos will be written on a file name.ascii (default rdecay1)
+
