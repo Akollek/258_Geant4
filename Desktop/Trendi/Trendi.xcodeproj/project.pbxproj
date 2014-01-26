@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF705D5B1887871F00FC3A71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF705D5A1887871F00FC3A71 /* UIKit.framework */; };
+		FF705D5D1887871F00FC3A71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF705D5C1887871F00FC3A71 /* Foundation.framework */; };
+		FF705D5F1887871F00FC3A71 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF705D5E1887871F00FC3A71 /* CoreGraphics.framework */; };
+		FF705D651887871F00FC3A71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF705D631887871F00FC3A71 /* InfoPlist.strings */; };
+		FF705D671887871F00FC3A71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF705D661887871F00FC3A71 /* main.m */; };
+		FF705D6B1887871F00FC3A71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF705D6A1887871F00FC3A71 /* AppDelegate.m */; };
+		FF705D6D1887871F00FC3A71 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FF705D6C1887871F00FC3A71 /* Default.png */; };
+		FF705D6F1887871F00FC3A71 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF705D6E1887871F00FC3A71 /* Default@2x.png */; };
+		FF705D711887871F00FC3A71 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF705D701887871F00FC3A71 /* Default-568h@2x.png */; };
+		FF705D741887871F00FC3A71 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF705D721887871F00FC3A71 /* MainStoryboard_iPhone.storyboard */; };
+		FF705D771887871F00FC3A71 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF705D751887871F00FC3A71 /* MainStoryboard_iPad.storyboard */; };
+		FF705D7A1887871F00FC3A71 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF705D791887871F00FC3A71 /* ViewController.m */; };
+		FF705D821887872000FC3A71 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF705D811887872000FC3A71 /* SenTestingKit.framework */; };
+		FF705D831887872000FC3A71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF705D5A1887871F00FC3A71 /* UIKit.framework */; };
+		FF705D841887872000FC3A71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF705D5C1887871F00FC3A71 /* Foundation.framework */; };
+		FF705D8C1887872000FC3A71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF705D8A1887872000FC3A71 /* InfoPlist.strings */; };
+		FF705D8F1887872000FC3A71 /* TrendiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF705D8E1887872000FC3A71 /* TrendiTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF705D851887872000FC3A71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF705D4D1887871F00FC3A71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF705D551887871F00FC3A71;
+			remoteInfo = Trendi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF705D561887871F00FC3A71 /* Trendi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trendi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF705D5A1887871F00FC3A71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF705D5C1887871F00FC3A71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF705D5E1887871F00FC3A71 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF705D621887871F00FC3A71 /* Trendi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Trendi-Info.plist"; sourceTree = "<group>"; };
+		FF705D641887871F00FC3A71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF705D661887871F00FC3A71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF705D681887871F00FC3A71 /* Trendi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Trendi-Prefix.pch"; sourceTree = "<group>"; };
+		FF705D691887871F00FC3A71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF705D6A1887871F00FC3A71 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF705D6C1887871F00FC3A71 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FF705D6E1887871F00FC3A71 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FF705D701887871F00FC3A71 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FF705D731887871F00FC3A71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		FF705D761887871F00FC3A71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		FF705D781887871F00FC3A71 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF705D791887871F00FC3A71 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF705D801887872000FC3A71 /* TrendiTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendiTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF705D811887872000FC3A71 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FF705D891887872000FC3A71 /* TrendiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrendiTests-Info.plist"; sourceTree = "<group>"; };
+		FF705D8B1887872000FC3A71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF705D8D1887872000FC3A71 /* TrendiTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrendiTests.h; sourceTree = "<group>"; };
+		FF705D8E1887872000FC3A71 /* TrendiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrendiTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF705D531887871F00FC3A71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF705D5B1887871F00FC3A71 /* UIKit.framework in Frameworks */,
+				FF705D5D1887871F00FC3A71 /* Foundation.framework in Frameworks */,
+				FF705D5F1887871F00FC3A71 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF705D7C1887872000FC3A71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF705D821887872000FC3A71 /* SenTestingKit.framework in Frameworks */,
+				FF705D831887872000FC3A71 /* UIKit.framework in Frameworks */,
+				FF705D841887872000FC3A71 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF705D4B1887871F00FC3A71 = {
+			isa = PBXGroup;
+			children = (
+				FF705D601887871F00FC3A71 /* Trendi */,
+				FF705D871887872000FC3A71 /* TrendiTests */,
+				FF705D591887871F00FC3A71 /* Frameworks */,
+				FF705D571887871F00FC3A71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF705D571887871F00FC3A71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF705D561887871F00FC3A71 /* Trendi.app */,
+				FF705D801887872000FC3A71 /* TrendiTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF705D591887871F00FC3A71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF705D5A1887871F00FC3A71 /* UIKit.framework */,
+				FF705D5C1887871F00FC3A71 /* Foundation.framework */,
+				FF705D5E1887871F00FC3A71 /* CoreGraphics.framework */,
+				FF705D811887872000FC3A71 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF705D601887871F00FC3A71 /* Trendi */ = {
+			isa = PBXGroup;
+			children = (
+				FF705D691887871F00FC3A71 /* AppDelegate.h */,
+				FF705D6A1887871F00FC3A71 /* AppDelegate.m */,
+				FF705D721887871F00FC3A71 /* MainStoryboard_iPhone.storyboard */,
+				FF705D751887871F00FC3A71 /* MainStoryboard_iPad.storyboard */,
+				FF705D781887871F00FC3A71 /* ViewController.h */,
+				FF705D791887871F00FC3A71 /* ViewController.m */,
+				FF705D611887871F00FC3A71 /* Supporting Files */,
+			);
+			path = Trendi;
+			sourceTree = "<group>";
+		};
+		FF705D611887871F00FC3A71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF705D621887871F00FC3A71 /* Trendi-Info.plist */,
+				FF705D631887871F00FC3A71 /* InfoPlist.strings */,
+				FF705D661887871F00FC3A71 /* main.m */,
+				FF705D681887871F00FC3A71 /* Trendi-Prefix.pch */,
+				FF705D6C1887871F00FC3A71 /* Default.png */,
+				FF705D6E1887871F00FC3A71 /* Default@2x.png */,
+				FF705D701887871F00FC3A71 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF705D871887872000FC3A71 /* TrendiTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF705D8D1887872000FC3A71 /* TrendiTests.h */,
+				FF705D8E1887872000FC3A71 /* TrendiTests.m */,
+				FF705D881887872000FC3A71 /* Supporting Files */,
+			);
+			path = TrendiTests;
+			sourceTree = "<group>";
+		};
+		FF705D881887872000FC3A71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF705D891887872000FC3A71 /* TrendiTests-Info.plist */,
+				FF705D8A1887872000FC3A71 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF705D551887871F00FC3A71 /* Trendi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF705D921887872000FC3A71 /* Build configuration list for PBXNativeTarget "Trendi" */;
+			buildPhases = (
+				FF705D521887871F00FC3A71 /* Sources */,
+				FF705D531887871F00FC3A71 /* Frameworks */,
+				FF705D541887871F00FC3A71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trendi;
+			productName = Trendi;
+			productReference = FF705D561887871F00FC3A71 /* Trendi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF705D7F1887872000FC3A71 /* TrendiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF705D951887872000FC3A71 /* Build configuration list for PBXNativeTarget "TrendiTests" */;
+			buildPhases = (
+				FF705D7B1887872000FC3A71 /* Sources */,
+				FF705D7C1887872000FC3A71 /* Frameworks */,
+				FF705D7D1887872000FC3A71 /* Resources */,
+				FF705D7E1887872000FC3A71 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF705D861887872000FC3A71 /* PBXTargetDependency */,
+			);
+			name = TrendiTests;
+			productName = TrendiTests;
+			productReference = FF705D801887872000FC3A71 /* TrendiTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF705D4D1887871F00FC3A71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Amiel Kollek";
+			};
+			buildConfigurationList = FF705D501887871F00FC3A71 /* Build configuration list for PBXProject "Trendi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF705D4B1887871F00FC3A71;
+			productRefGroup = FF705D571887871F00FC3A71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF705D551887871F00FC3A71 /* Trendi */,
+				FF705D7F1887872000FC3A71 /* TrendiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF705D541887871F00FC3A71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF705D651887871F00FC3A71 /* InfoPlist.strings in Resources */,
+				FF705D6D1887871F00FC3A71 /* Default.png in Resources */,
+				FF705D6F1887871F00FC3A71 /* Default@2x.png in Resources */,
+				FF705D711887871F00FC3A71 /* Default-568h@2x.png in Resources */,
+				FF705D741887871F00FC3A71 /* MainStoryboard_iPhone.storyboard in Resources */,
+				FF705D771887871F00FC3A71 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF705D7D1887872000FC3A71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF705D8C1887872000FC3A71 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FF705D7E1887872000FC3A71 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF705D521887871F00FC3A71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF705D671887871F00FC3A71 /* main.m in Sources */,
+				FF705D6B1887871F00FC3A71 /* AppDelegate.m in Sources */,
+				FF705D7A1887871F00FC3A71 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF705D7B1887872000FC3A71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF705D8F1887872000FC3A71 /* TrendiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF705D861887872000FC3A71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF705D551887871F00FC3A71 /* Trendi */;
+			targetProxy = FF705D851887872000FC3A71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF705D631887871F00FC3A71 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF705D641887871F00FC3A71 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FF705D721887871F00FC3A71 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF705D731887871F00FC3A71 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		FF705D751887871F00FC3A71 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF705D761887871F00FC3A71 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		FF705D8A1887872000FC3A71 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF705D8B1887872000FC3A71 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF705D901887872000FC3A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF705D911887872000FC3A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF705D931887872000FC3A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trendi/Trendi-Prefix.pch";
+				INFOPLIST_FILE = "Trendi/Trendi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FF705D941887872000FC3A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trendi/Trendi-Prefix.pch";
+				INFOPLIST_FILE = "Trendi/Trendi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FF705D961887872000FC3A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Trendi.app/Trendi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trendi/Trendi-Prefix.pch";
+				INFOPLIST_FILE = "TrendiTests/TrendiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FF705D971887872000FC3A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Trendi.app/Trendi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trendi/Trendi-Prefix.pch";
+				INFOPLIST_FILE = "TrendiTests/TrendiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF705D501887871F00FC3A71 /* Build configuration list for PBXProject "Trendi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF705D901887872000FC3A71 /* Debug */,
+				FF705D911887872000FC3A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF705D921887872000FC3A71 /* Build configuration list for PBXNativeTarget "Trendi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF705D931887872000FC3A71 /* Debug */,
+				FF705D941887872000FC3A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF705D951887872000FC3A71 /* Build configuration list for PBXNativeTarget "TrendiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF705D961887872000FC3A71 /* Debug */,
+				FF705D971887872000FC3A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF705D4D1887871F00FC3A71 /* Project object */;
+}
